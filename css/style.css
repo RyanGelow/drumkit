@@ -82,31 +82,15 @@ kbd {
         margin: 0.5rem;
         font-size: 1rem;
         padding: 0.5rem .25rem;
-        transition: all 0.07s;
         width: 85px;
-        text-align: center;
-        color: black;
-        background: rgba(255, 255, 255, 0.2);
-        text-shadow: 0 0 5px black;
-        cursor: pointer;
     }
     
     kbd {
-        display: block;
         font-size: 36px;
     }
-    
-    .playing {
-        transform: scale(1.1);
-        border-color: rgb(185, 31, 78);
-        box-shadow: 0 0 10px rgb(185, 31, 78);
-    }
-    
+
     .sound {
-        font-size: 1rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: rgb(185, 31, 78);   
+        font-size: 1rem; 
     }
 
 }
@@ -115,4 +99,30 @@ kbd {
     .title {
         padding-top: 20px;   
     }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .keys {
+        width: 100%;
+    }
+    
+    .key {
+        border: 2px solid black;
+        border-radius: 2px;
+        margin: 0.25rem;
+        font-size: 0.5rem;
+        padding: 0.25rem .125rem;
+        width: 50px;
+    }
+    
+    kbd {
+        font-size: 20px;
+    }
+
+    .sound {
+        font-size: 0.5rem; 
+    }
+
 }
