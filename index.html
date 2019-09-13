@@ -116,12 +116,14 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition))
 
 window.addEventListener('keydown', playSound)
 
-if(window.innerWidth <= 400) {
-    window.addEventListener('touchstart', clickSound)
-}else{
-    window.addEventListener('click', clickSound)
-}
+const clickEvent = (function() {
+    if ('ontouchstart' in document.documentElement === true)
+        return 'touchstart';
+    else
+        return 'click';
+})();
 
+window.addEventListener(clickEvent, clickSound);
 
 </script>
 
