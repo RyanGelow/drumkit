@@ -36,7 +36,6 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     width: 85%;
-    size: 75%;
 }
 
 .key {
@@ -70,4 +69,50 @@ kbd {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: rgb(185, 31, 78);   
+}
+
+@media only screen and (max-width: 550px) {
+    .keys {
+        width: 95%;
+    }
+    
+    .key {
+        border: 3px solid black;
+        border-radius: 3px;
+        margin: 0.5rem;
+        font-size: 1rem;
+        padding: 0.5rem .25rem;
+        transition: all 0.07s;
+        width: 85px;
+        text-align: center;
+        color: black;
+        background: rgba(255, 255, 255, 0.2);
+        text-shadow: 0 0 5px black;
+        cursor: pointer;
+    }
+    
+    kbd {
+        display: block;
+        font-size: 36px;
+    }
+    
+    .playing {
+        transform: scale(1.1);
+        border-color: rgb(185, 31, 78);
+        box-shadow: 0 0 10px rgb(185, 31, 78);
+    }
+    
+    .sound {
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: rgb(185, 31, 78);   
+    }
+
+}
+
+@media only screen and (max-width: 363px) {
+    .title {
+        padding-top: 20px;   
+    }
 }
